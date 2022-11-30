@@ -9,6 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange),
       home: MyHomePage(),
     );
   }
@@ -19,6 +21,13 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: (){},
+          child: Text('메인색 확인용'),
+        ),
+      ),
+    );
   }
 }
